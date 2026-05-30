@@ -1,0 +1,90 @@
+<!--
+
+Developer: Dianeris Jiménez
+Project: Simple Calculator
+Date: May 30th, 2026
+
+Objectives: To create a simple calculator using only HTML, CSS, and JavaScript. 
+This is an opportunity for me to continue expanding my knowledge of HTML and JavaScript. 
+Previously, I had the chance to build a website using only HTML and CSS, but now is a good time to start broadening my skills.
+
+For this code, I was inspired by a Medium article in which Cyril Bassey,
+ a developer, created a simple calculator and explained his process.
+
+Reference: Bassey, C. (2024, April 15). Navigating JavaScript: My Journey to Building a Simple Calculator. Medium. https://medium.com/@cyrilbassey/navigating-javascript-my-journey-to-building-a-simple-calculator-088146f45f85
+‌
+Some aspects of the code below are identical to the project created by Cyril Bassey, but I have made some changes to the code in order to continue learning.
+Each part of the code will be documented to explain its functions. 
+
+Variable Dictionary:
+
+title - variable that will contains the attributes designated to the title: Simple Calculator.
+calculator - variable that will contain the attributes for the calculator.
+display - determines the size and style the calculator its going to have.
+calButtons – Variable that contains the styles for the calculator buttons.
+deleteBtn - variable that contains slice function to eliminate each character one by one.
+
+Heres a link that explains my code: 
+https://docs.google.com/document/d/1SOROSroDin9YZHpOYXlYM7m8wuW8aItrz4qSoQdPOzs/edit?usp=sharing
+-->
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Simple Calculator </title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+</head>
+
+<body>
+
+    <h1 class = "title"> Simple Calculator </h1>
+    <div class="calculator">
+
+        <input type="text" id="display" readonly>
+
+        <!-- This section represents the buttons that contain the numbers found on a calculator. -->
+        <div class="calButtons">
+            <button onclick="appendToDisplay('1')">1</button>
+            <button onclick="appendToDisplay('2')">2</button>
+            <button onclick="appendToDisplay('3')">3</button>
+            <button onclick="appendToDisplay('4')">4</button>
+            <button onclick="appendToDisplay('5')">5</button>
+            <button onclick="appendToDisplay('6')">6</button>
+            <button onclick="appendToDisplay('7')">7</button>
+            <button onclick="appendToDisplay('8')">8</button>
+            <button onclick="appendToDisplay('9')">9</button> 
+            <button onclick="appendToDisplay('0')">0</button>
+
+            <button onclick="clearDisplay()">C</button>
+             
+            <button onclick="appendToDisplay('/')">/</button>
+            <button onclick="appendToDisplay('*')">*</button>
+            <button onclick="appendToDisplay('-')">-</button>
+            <button onclick="appendToDisplay('+')">+</button>
+            <button onclick="evaluateExpression()">=</button>
+            
+            <button onclick="appendToDisplay('.')">.</button>
+            <button id = "deleteBtn">DEL</button>
+           
+            
+        </div>
+    </div>
+ 
+    <!-- These circles are for decorative purposes. -->
+    <div class="circle circle-1"> </div>
+    <div class="circle circle-2"> </div>
+    <div class="circle circle-3"> </div>
+    <div class="circle circle-4"> </div>
+
+
+</body>
+</html>

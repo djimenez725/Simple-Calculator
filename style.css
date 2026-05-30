@@ -1,0 +1,109 @@
+
+:root{
+    background-color: #1B1D2A;
+}
+
+
+/* Contains the attributes designated to the title: Simple Calculator. */
+.title {
+    font-size: 40px;
+    justify-content: center;
+    margin-top: 60px;
+    display:flex;
+    text-transform: uppercase;
+    color: #de5cb5;
+    font-family: "Press Start 2P", system-ui;
+   
+}
+
+.title::before {
+    position: absolute;
+    content: "Simple Calculator";
+    color:  rgb(75, 166, 232);
+    top: 60px;
+    left: 420px;
+}
+
+
+/* Contains tthe attributes for the calculator. */
+.calculator {
+    width: 750px;
+    margin: 60px auto;
+    border: 2px solid #ece94e;
+    border-radius: 10px;
+    padding: 70px;
+    box-shadow: 5px 5px 10px #3A4063;
+    background-color: rgb(75, 166, 232)
+}
+
+/* Determines the size and style the calculator its going to have. */
+#display {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color:rgb(245, 248, 250);
+    border-color:black;
+    border-radius: 5px;
+
+}
+
+/* Contains the styles for the calculator buttons */
+.calButtons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+
+/* Attribute that contains the style of the buttons */
+button {
+    padding: 10px;
+    font-size: 18px;
+    font-family: "Press Start 2P", system-ui;
+    border: none;
+    cursor: pointer;
+    background-color: #ece94e;
+    button:hover {
+        background-color: rgb(100, 180, 220);
+    }
+}
+
+/* Circle attributes */
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 159, 49, 0.2);
+    top: 50px;
+    left: 100px;
+}
+
+.circle-2 {
+    width: 150px;
+    height: 150px;
+    background: rgba(209, 107, 165, 0.2);
+    bottom: 50px;
+    right: 100px;
+}
+
+.circle-3 {
+    width: 100px;
+    height: 100px;
+    background-color: #ece94e;
+    bottom:70px;
+    left: 100px;
+    opacity: 0.7;
+}
+
+.circle-4 {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(75, 166, 232);
+    top:70px;
+    left: 100px;
+    opacity: 0.7;
+}
